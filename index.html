@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>موقع الشركة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <div class="brand">
+        <img id="logo" class="brand__logo" alt="Logo" />
+        <div class="brand__text">
+          <h1 id="companyName" class="brand__name"></h1>
+          <p id="tagline" class="brand__tagline"></p>
+        </div>
+      </div>
+
+      <div class="quick">
+        <div class="quick__block" id="salesBlock">
+          <div class="quick__title">أرقام المبيعات</div>
+          <div class="quick__list" id="salesNumbers"></div>
+        </div>
+
+        <div class="quick__block" id="factoryBlock">
+          <div class="quick__title">رقم المصنع</div>
+          <div class="quick__list" id="factoryNumber"></div>
+        </div>
+
+        <div class="quick__block" id="socialBlock">
+          <div class="quick__title">التواصل الاجتماعي</div>
+          <div class="social" id="socialIcons"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="card">
+      <div class="card__head">
+        <h2>المواقع</h2>
+        <p>أضف أي عدد من المواقع وسيظهر تلقائيًا.</p>
+      </div>
+      <div id="locations" class="locations"></div>
+    </section>
+
+    <section class="card card--muted" id="noticeEdit" style="display:none;">
+      <div class="card__head">
+        <h2>للتحرير</h2>
+        <p>هذا الرابط يظهر فقط لو فعّلته في البيانات.</p>
+      </div>
+      <a id="editLink" class="btn" target="_blank" rel="noopener">فتح لوحة التحرير</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span id="footerText"></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
