@@ -1,0 +1,30 @@
+{
+  "companyName": "Jood Kids",
+  "tagline": "ملابس أطفال",
+  "logo": "images/logo.svg",
+  "salesNumbers": [
+    "+20 106 603 1078",
+    "+20 115 559 0838"
+  ],
+  "factoryNumber": "+20 115 587 0489",
+  "social": {
+    "facebook": "https://www.facebook.com/share/1AGzmfL28g/",
+    "telegram": "https://t.me/goodkids12",
+    "instagram": "",
+    "tiktok": ""
+  },
+  "locations": [
+    {
+      "title": "موقع الشركة",
+      "map": "https://maps.google.com/?q=سوق+القماش+مدينة+العبور",
+      "notes": "سوق القماش – مدينة العبور"
+    },
+    {
+      "title": "موقع المخزن",
+      "map": "",
+      "notes": ""
+    }
+  ],
+  "editRepoUrl": "",
+  "showEditLink": false
+}

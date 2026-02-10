@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>موقع الشركة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__content">
+        <div class="brand">
+          <div class="brand__logoWrap">
+            <img id="companyLogo" class="brand__logo" src="images/logo.png" alt="Logo" onerror="this.style.display='none';document.querySelector('.brand__logoFallback').style.display='flex'">
+            <div class="brand__logoFallback" aria-hidden="true">
+              <span id="logoInitial">J</span>
+            </div>
+          </div>
+          <div class="brand__meta">
+            <h1 id="companyName" class="brand__name">اسم الشركة</h1>
+            <p id="companyTagline" class="brand__tagline">ملابس أطفال</p>
+          </div>
+        </div>
+
+        <div class="cards">
+          <section class="card">
+            <div class="card__header">
+              <div class="card__title">التواصل</div>
+              <div class="card__subtitle">أرقام المبيعات والمصنع</div>
+            </div>
+
+            <div class="rows" id="phones"></div>
+
+            <div class="social" id="social"></div>
+
+            <div class="note">
+              <span class="dot"></span>
+              <span>عند تعديل <b>data.json</b> ثم رفعه على GitHub سيظهر التحديث فورًا.</span>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="card__header">
+              <div class="card__title">المواقع</div>
+              <div class="card__subtitle">موقع الشركة / المخزن / أي مواقع إضافية</div>
+            </div>
+
+            <div class="locations" id="locations"></div>
+          </section>
+        </div>
+
+        <footer class="footer">
+          <div class="footer__left">
+            <span id="footerLine">©</span>
+          </div>
+          <div class="footer__right">
+            <a class="miniLink" href="#" id="repoHint" target="_blank" rel="noopener">رابط التعديل (GitHub)</a>
+          </div>
+        </footer>
+      </div>
+    </header>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
