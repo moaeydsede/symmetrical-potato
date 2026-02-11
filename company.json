@@ -1,0 +1,32 @@
+{
+  "companyName": "JOOD KIDS",
+  "tagline": "مصنع ملابس أطفال • جودة وراحة",
+  "salesNumbers": [
+    "+201066031078",
+    "01155590838"
+  ],
+  "factoryNumbers": [
+    "+201155870489"
+  ],
+  "sites": [
+    "سوق القماش - مدينة العبور"
+  ],
+  "socialLinks": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/share/1AGzmfL28g/",
+      "icon": "facebook"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://t.me/goodkids12",
+      "icon": "telegram"
+    },
+    {
+      "name": "WhatsApp",
+      "url": "https://wa.me/201066031078",
+      "icon": "whatsapp"
+    }
+  ],
+  "updatedAt": "2026-02-11T11:51:17.560691Z"
+}

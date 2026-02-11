@@ -1,0 +1,9 @@
+
+body{margin:0;font-family:Arial;background:#F6F7F5}
+.app{max-width:900px;margin:auto;padding:15px}
+.topbar{display:flex;justify-content:space-between;align-items:center;background:white;padding:10px;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+.logoImg{height:60px}
+.card{background:white;margin-top:15px;padding:15px;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.05)}
+ul{padding:0;list-style:none}
+li{margin:8px 0}
+.btn{background:#3FA9B5;color:white;padding:10px 15px;border-radius:10px;text-decoration:none}

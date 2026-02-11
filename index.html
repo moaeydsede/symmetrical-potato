@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JOOD KIDS</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+<div class="brand">
+<img src="logo.png" class="logoImg">
+<div>
+<h1 id="companyName"></h1>
+<p id="tagline"></p>
+</div>
+</div>
+<a href="editor.html" class="btn">تعديل البيانات</a>
+</header>
+
+<div class="card">
+<h2>أرقام السيلز</h2>
+<ul id="sales"></ul>
+</div>
+
+<div class="card">
+<h2>أرقام المصنع</h2>
+<ul id="factory"></ul>
+</div>
+
+<div class="card">
+<h2>QR واتساب</h2>
+<canvas id="qr" width="200" height="200"></canvas>
+</div>
+
+</div>
+<script src="qr.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

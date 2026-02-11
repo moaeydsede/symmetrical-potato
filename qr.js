@@ -1,0 +1,1 @@
+window.QR={draw:function(c,t){c.getContext('2d').fillText('QR',80,100);}};
