@@ -1,0 +1,1 @@
+window.QR={draw:function(){}};
