@@ -1,0 +1,53 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "company"
+    label: "بيانات الشركة"
+    files:
+      - file: "data/company.json"
+        label: "Company Data"
+        name: "company"
+        format: "json"
+        fields:
+          - { label: "اسم الشركة", name: "companyName", widget: "string" }
+          - { label: "وصف مختصر", name: "tagline", widget: "string", required: false }
+          - { label: "مسار اللوجو (ارفع صورة ثم اخترها)", name: "logoPath", widget: "image", required: false }
+          - label: "ألوان المشروع (مثل لون الكرت)"
+            name: "theme"
+            widget: "object"
+            fields:
+              - { label: "Primary", name: "primary", widget: "string", default: "#0B5FFF" }
+              - { label: "Accent", name: "accent", widget: "string", default: "#16A34A" }
+              - { label: "Background", name: "bg", widget: "string", default: "#0B1220" }
+              - { label: "Card", name: "card", widget: "string", default: "#101B2E" }
+              - { label: "Text", name: "text", widget: "string", default: "#EAF0FF" }
+              - { label: "Muted", name: "muted", widget: "string", default: "#9AA4B2" }
+          - label: "أرقام السيلز"
+            name: "sealsNumbers"
+            widget: "list"
+            summary: "{{fields.number}}"
+            field: { label: "رقم", name: "number", widget: "string" }
+          - label: "أرقام المصنع"
+            name: "factoryNumbers"
+            widget: "list"
+            field: { label: "رقم", name: "number", widget: "string" }
+          - label: "مواقع / فروع"
+            name: "sites"
+            widget: "list"
+            field: { label: "موقع", name: "site", widget: "string" }
+          - label: "مواقع التواصل"
+            name: "socialLinks"
+            widget: "list"
+            fields:
+              - { label: "الاسم", name: "name", widget: "string" }
+              - { label: "الرابط", name: "url", widget: "string" }
+              - { label: "الأيقونة (facebook/telegram/whatsapp)", name: "icon", widget: "string", required: false }
+          - { label: "آخر تحديث", name: "updatedAt", widget: "datetime", required: false }

@@ -2,78 +2,24 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#0B5FFF" />
-  <title>بيانات الشركة</title>
-  <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="icon" href="assets/uploads/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>لوحة التحرير</title>
+  <style>
+    body{margin:0;font-family:system-ui;background:#0b1220;color:#eaf0ff}
+    .note{padding:14px 14px 0}
+    .note code{background:rgba(255,255,255,.08);padding:2px 6px;border-radius:8px}
+  </style>
 </head>
 <body>
-  <div class="app">
-    <header class="topbar">
-      <div class="brand">
-        <img id="logo" class="logo" alt="Logo" src="assets/uploads/logo.svg" />
-        <div class="brandText">
-          <h1 id="companyName">بيانات الشركة</h1>
-          <p id="tagline" class="muted"></p>
-        </div>
-      </div>
-      <a class="chip" href="admin/" title="لوحة التحرير">تحرير</a>
-    </header>
-
-    <main class="grid">
-      <section class="card">
-        <h2>أرقام السيلز</h2>
-        <ul id="salesList" class="list"></ul>
-        <div class="hint muted">يمكن إضافة/تعديل/حذف الأرقام من لوحة التحرير.</div>
-      </section>
-
-      <section class="card">
-        <h2>أرقام المصنع</h2>
-        <ul id="factoryList" class="list"></ul>
-        <div class="hint muted">أي تغيير يظهر تلقائياً بعد الحفظ والنشر على GitHub.</div>
-      </section>
-
-      <section class="card">
-        <h2>مواقع وإضافات</h2>
-        <ul id="sitesList" class="list"></ul>
-      </section>
-
-      <section class="card">
-        <h2>مواقع التواصل</h2>
-        <div id="socialGrid" class="social"></div>
-      </section>
-
-      <section class="card full">
-        <h2>QR و روابط سريعة</h2>
-        <div class="qrRow">
-          <div class="qrBox">
-            <div class="qrTitle">واتساب</div>
-            <canvas id="qrWhats" width="220" height="220"></canvas>
-            <a id="whatsLink" class="qrLink" href="#" target="_blank" rel="noopener">فتح الرابط</a>
-          </div>
-          <div class="qrBox">
-            <div class="qrTitle">فيسبوك</div>
-            <canvas id="qrFb" width="220" height="220"></canvas>
-            <a id="fbLink" class="qrLink" href="#" target="_blank" rel="noopener">فتح الرابط</a>
-          </div>
-          <div class="qrBox">
-            <div class="qrTitle">تليجرام</div>
-            <canvas id="qrTg" width="220" height="220"></canvas>
-            <a id="tgLink" class="qrLink" href="#" target="_blank" rel="noopener">فتح الرابط</a>
-          </div>
-        </div>
-        <div class="hint muted">هذه الصفحة موبايل 100% (تقدر تضيفها للشاشة الرئيسية كتطبيق PWA).</div>
-      </section>
-    </main>
-
-    <footer class="footer muted">
-      <span>آخر تحديث: </span><span id="updatedAt">—</span>
-    </footer>
+  <div class="note">
+    <div style="font-weight:900">لوحة التحرير (GitHub)</div>
+    <div style="opacity:.85;font-size:13px;margin-top:6px">
+      سجّل دخولك بحساب GitHub ثم عدّل البيانات وسيتم حفظها داخل الريبو تلقائياً.
+      الملف الذي يتم تعديله: <code>data/company.json</code>
+    </div>
   </div>
 
-  <script src="qr.js"></script>
-  <script src="app.js"></script>
+  <!-- Decap CMS -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
