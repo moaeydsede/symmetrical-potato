@@ -1,0 +1,40 @@
+{
+  "companyName": "Good Kids Factory",
+  "tagline": "Children's Wear • Quality & Comfort",
+  "sealsNumbers": [
+    "+20 106 603 1078"
+  ],
+  "factoryNumbers": [
+    "+20 115 587 0489"
+  ],
+  "sites": [
+    "سوق القماش - مدينة العبور"
+  ],
+  "socialLinks": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/",
+      "icon": "facebook"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://t.me/",
+      "icon": "telegram"
+    },
+    {
+      "name": "WhatsApp",
+      "url": "https://wa.me/201066031078",
+      "icon": "whatsapp"
+    }
+  ],
+  "logoPath": "assets/uploads/logo.png",
+  "theme": {
+    "primary": "#0B5FFF",
+    "accent": "#16A34A",
+    "bg": "#0B1220",
+    "card": "#101B2E",
+    "text": "#EAF0FF",
+    "muted": "#9AA4B2"
+  },
+  "updatedAt": "2026-02-10T22:33:55.283383Z"
+}
